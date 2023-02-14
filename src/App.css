@@ -1,38 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: #222222;
+    color: white;
+}
+
+.loading {
+    margin: 30px 45%;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Al Tarikh", serif;
+    padding: 0;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1 {
+    margin: 30px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App button {
+    border: 2px solid white;
+    width: 20%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    background: #222222;
+    color: white;
+    margin-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App button:hover {
+    background: white;
+    color: #222222;
 }
 
-.App-link {
-  color: #61dafb;
+.users-list {
+    margin-top: 50px;
+    font-size: 1.3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.users-list__item {
+    margin-bottom: 30px;
+    border-bottom: 1px solid white;
+}
+
+.login-form {
+    padding: 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 250px auto;
+    background: #222222;
+}
+
+.login-form input {
+    margin-bottom: 10px;
+    padding: 5px;
+    height: 30px;
+    background: #222222;
+    border: 1px solid #ffcf00;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+}
+
+
+.login-form .btns {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.login-form button {
+    border: none;
+    width: 49%;
+    height: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+}
+
+.btn__login {
+    background: white;
+    color: #222222;
+}
+
+.btn__register {
+    background: #ffcf00;
+    color: #222222;
+}
+
+.btn__login:hover {
+    background: #d5d5d5;
+}
+
+.btn__register:hover {
+    background: #e1b702;
 }
